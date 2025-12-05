@@ -23,16 +23,22 @@ parent-directory/
 
 ## ディレクトリ構成
 
-```
-limimeshi-infra/
-├── firestore.rules         # Firestoreセキュリティルール
-├── firestore.indexes.json  # Firestore複合インデックス
-├── firebase.json           # Firebase設定
-├── docs/
-│   ├── data-model/         # データモデル設計ドキュメント
-│   └── guides/             # 本番環境セットアップガイド
-└── scripts/                # スクリプト（デプロイ、データ管理）
-```
+### Firebase設定（デプロイ対象）
+
+| ファイル | 用途 |
+|---------|------|
+| `firestore.rules` | Firestoreセキュリティルール |
+| `firestore.indexes.json` | Firestore複合インデックス |
+| `firebase.json` | デプロイ設定 |
+| `.firebaserc` | プロジェクト設定（dev/prod） |
+
+### ドキュメント・スクリプト
+
+| ディレクトリ | 内容 |
+|-------------|------|
+| `docs/data-model/` | データモデル設計 |
+| `docs/guides/` | 本番環境セットアップガイド |
+| `scripts/` | デプロイ・データ管理スクリプト |
 
 ## スクリプト
 
