@@ -30,21 +30,27 @@ limimeshi-infra/
 ├── firebase.json           # Firebase設定
 ├── data-model/             # データモデル設計ドキュメント
 ├── guides/                 # 本番環境セットアップガイド
-└── scripts/                # デプロイスクリプト
+└── scripts/                # スクリプト（デプロイ、データ管理）
 ```
 
-## デプロイ
+## スクリプト
 
-### 開発環境
+### デプロイ
 
 ```bash
-./scripts/deploy-dev.sh
+./scripts/deploy-dev.sh   # 開発環境へデプロイ
+./scripts/deploy-prod.sh  # 本番環境へデプロイ
 ```
 
-### 本番環境
+### データ管理
 
 ```bash
-./scripts/deploy-prod.sh
+# 管理者権限付与
+node scripts/set-admin-claim.js <USER_UID>
+
+# テストデータ管理
+node scripts/seed-test-data.js   # 投入（16チェーン店 + キャンペーン）
+node scripts/clear-test-data.js  # 削除
 ```
 
 ## 関連リポジトリ
