@@ -1,0 +1,1 @@
+../../../limimeshi-docs/shared/setup-new-repo/docs/governance/shared-rules.md

@@ -1,0 +1,1 @@
+../../../limimeshi-docs/shared/setup-new-repo/.specify/templates/plan-template.md
