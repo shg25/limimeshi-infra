@@ -93,16 +93,19 @@ limimeshi-infra/
 ├── firestore.indexes.json    # Firestore複合インデックス
 ├── firebase.json             # Firebase設定
 ├── .firebaserc               # Firebaseプロジェクト設定
-├── data-model/               # データモデル設計
-│   ├── firestore-collections.md
-│   ├── security-rules.md
-│   └── indexes.md
-├── guides/                   # セットアップガイド
-│   └── firebase-production-setup.md
-├── scripts/                  # デプロイスクリプト
+├── scripts/                  # スクリプト
 │   ├── deploy-dev.sh
-│   └── deploy-prod.sh
+│   ├── deploy-prod.sh
+│   ├── set-admin-claim.js
+│   ├── seed-test-data.js
+│   └── clear-test-data.js
 └── docs/                     # ドキュメント
+    ├── data-model/           # データモデル設計
+    │   ├── firestore-collections.md
+    │   ├── security-rules.md
+    │   └── indexes.md
+    ├── guides/               # セットアップガイド
+    │   └── firebase-production-setup.md
     ├── roadmap.md
     └── CHANGELOG.md
 ```

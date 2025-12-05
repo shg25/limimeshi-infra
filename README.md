@@ -28,8 +28,9 @@ limimeshi-infra/
 ├── firestore.rules         # Firestoreセキュリティルール
 ├── firestore.indexes.json  # Firestore複合インデックス
 ├── firebase.json           # Firebase設定
-├── data-model/             # データモデル設計ドキュメント
-├── guides/                 # 本番環境セットアップガイド
+├── docs/
+│   ├── data-model/         # データモデル設計ドキュメント
+│   └── guides/             # 本番環境セットアップガイド
 └── scripts/                # スクリプト（デプロイ、データ管理）
 ```
 
