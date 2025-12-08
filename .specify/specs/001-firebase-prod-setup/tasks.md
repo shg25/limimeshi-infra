@@ -1,7 +1,7 @@
 # Tasks: Firebase本番環境構築
 
-**Input**: Design documents from `/specs/001-firebase-prod-setup/`
-**Prerequisites**: plan.md (required), spec.md (required)
+**Input**: Design documents from `/specs/001-firebase-prod-setup/`  
+**Prerequisites**: plan.md (required), spec.md (required)  
 
 ## Format: `[ID] [Status] Description`
 

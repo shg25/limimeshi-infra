@@ -1,8 +1,8 @@
 # Completion Checklist: Firebase本番環境構築
 
-**Purpose**: 本番環境構築の完了確認
-**Created**: 2025-12-08
-**Feature**: [spec.md](./spec.md)
+**Purpose**: 本番環境構築の完了確認  
+**Created**: 2025-12-08  
+**Feature**: [spec.md](./spec.md)  
 
 ## GCPプロジェクト
 
