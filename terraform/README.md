@@ -1,6 +1,6 @@
 # Terraform
 
-Firebase/GCPリソースをコードで管理するための設定ファイル群。
+Firebase/GCPリソースをコードで管理するための設定ファイル群
 
 ## 概要
 
@@ -11,7 +11,7 @@ Terraformを使用して以下のリソースを管理：
 | Firebase Project | Firebaseプロジェクトの有効化 |
 | Firestore Database | Firestoreデータベースの作成 |
 
-※ Authentication（Identity Platform）はTerraformで問題が発生するため、Firebase Consoleで手動設定。
+※ Authentication（Identity Platform）はTerraformで問題が発生するため、Firebase Consoleで手動設定
 
 ## ディレクトリ構成
 
@@ -69,7 +69,7 @@ terraform apply -var-file=environments/prod.tfvars
 
 ## Terraformで管理できないもの
 
-以下はFirebase ConsoleまたはFirebase CLIで設定：
+以下はFirebase ConsoleまたはFirebase CLIで設定
 
 | 項目 | 設定方法 |
 |------|----------|

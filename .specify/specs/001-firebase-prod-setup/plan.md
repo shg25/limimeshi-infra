@@ -1,23 +1,25 @@
 # Implementation Plan: Firebase本番環境構築
 
-**Branch**: `feature/firebase-prod-setup` | **Date**: 2025-12-08 | **Spec**: [spec.md](./spec.md)
-**Input**: Feature specification from `/specs/001-firebase-prod-setup/spec.md`
+**Branch**: `feature/firebase-prod-setup` | **Date**: 2025-12-08 | **Spec**: [spec.md](./spec.md)  
+**Input**: Feature specification from `/specs/001-firebase-prod-setup/spec.md`  
 
 ## Summary
 
-Firebase本番環境（limimeshi-prod）をTerraformとCLIツールを組み合わせて構築する。GCPプロジェクト作成→Firebase/Firestore有効化→Rules/Indexesデプロイ→管理者設定の順で進める。
+Firebase本番環境（limimeshi-prod）をTerraformとCLIツールを組み合わせて構築する
+
+GCPプロジェクト作成→Firebase/Firestore有効化→Rules/Indexesデプロイ→管理者設定の順で進める
 
 ## Technical Context
 
-**Language/Version**: HCL (Terraform), JavaScript (Node.js)
-**Primary Dependencies**: Terraform (~> 1.0), google-beta provider (~> 5.0), firebase-admin
-**Storage**: Firestore（asia-northeast1）
-**Testing**: gcloud/firebase CLI での手動確認
-**Target Platform**: GCP/Firebase
-**Project Type**: Infrastructure as Code
-**Performance Goals**: N/A（インフラ構築）
-**Constraints**: Firestoreロケーションは作成後変更不可
-**Scale/Scope**: 1プロジェクト、1 Firestoreデータベース
+**Language/Version**: HCL (Terraform), JavaScript (Node.js)  
+**Primary Dependencies**: Terraform (~> 1.0), google-beta provider (~> 5.0), firebase-admin  
+**Storage**: Firestore（asia-northeast1）  
+**Testing**: gcloud/firebase CLI での手動確認  
+**Target Platform**: GCP/Firebase  
+**Project Type**: Infrastructure as Code  
+**Performance Goals**: N/A（インフラ構築）  
+**Constraints**: Firestoreロケーションは作成後変更不可  
+**Scale/Scope**: 1プロジェクト、1 Firestoreデータベース  
 
 ## Constitution Check
 
@@ -55,7 +57,7 @@ scripts/
 └── set-admin-claim.js         # 管理者Claims設定（既存、環境変数対応追加）
 ```
 
-**Structure Decision**: Terraformは`terraform/`ディレクトリに集約。環境ごとの差分は`.tfvars`ファイルで管理。
+**Structure Decision**：Terraformは`terraform/`ディレクトリに集約し、環境ごとの差分は`.tfvars`ファイルで管理
 
 ## Complexity Tracking
 
@@ -86,6 +88,6 @@ scripts/
 
 Terraformで自動化できない項目：
 
-1. **Blazeプラン切り替え**: 課金設定のためConsole必須
-2. **Identity Platform**: ADC認証でクォータプロジェクトエラー
-3. **Androidアプリ登録**: google-services.json生成のためConsole必須
+1. **Blazeプラン切り替え**：課金設定のためConsole必須
+2. **Identity Platform**：ADC認証でクォータプロジェクトエラー
+3. **Androidアプリ登録**：google-services.json生成のためConsole必須

@@ -13,7 +13,8 @@ parent-directory/
 
 ## ブランチ戦略
 
-このリポジトリは**git-flow**を採用。詳細は [CONTRIBUTING.md](https://github.com/shg25/limimeshi-docs/blob/main/CONTRIBUTING.md) を参照。
+- このリポジトリは**git-flow**を採用
+- 詳細は [CONTRIBUTING.md](https://github.com/shg25/limimeshi-docs/blob/main/CONTRIBUTING.md) を参照
 
 | ブランチ | 用途 |
 |---------|------|
@@ -38,7 +39,8 @@ parent-directory/
 
 ### プラン
 
-両環境とも **Sparkプラン（無料）** で運用中。Cloud Functions等が必要になった場合はBlazeプランへ切り替え。
+- 両環境とも **Sparkプラン（無料）** で運用中
+- Cloud Functions等が必要になった場合はBlazeプランへ切り替え
 
 ## ディレクトリ構成
 

@@ -1,19 +1,21 @@
 # Feature Specification: Firebase本番環境構築
 
-**Feature Branch**: `feature/firebase-prod-setup`
-**Created**: 2025-12-08
-**Status**: Completed
-**Input**: User description: "Firebase本番環境（limimeshi-prod）をTerraformを使って構築する"
+**Feature Branch**: `feature/firebase-prod-setup`  
+**Created**: 2025-12-08  
+**Status**: Completed  
+**Input**: User description: "Firebase本番環境（limimeshi-prod）をTerraformを使って構築する"  
 
 ## User Scenarios & Testing
 
 ### User Story 1 - 本番環境でFirebaseリソースを利用可能にする (Priority: P1)
 
-開発者として、本番環境のFirebaseプロジェクトを作成し、Firestore/Authenticationを利用可能な状態にしたい。これにより本番リリースの準備が整う。
+開発者として、本番環境のFirebaseプロジェクトを作成し、Firestore/Authenticationを利用可能な状態にしたい
 
-**Why this priority**: 本番リリースに必須の基盤。他の全ての作業の前提条件となる。
+これにより本番リリースの準備が整う
 
-**Independent Test**: Firebase Consoleで`limimeshi-prod`プロジェクトにアクセスし、FirestoreとAuthenticationが有効化されていることを確認できる。
+**Why this priority**：本番リリースに必須の基盤であり、他の全ての作業の前提条件となる
+
+**Independent Test**：Firebase Consoleで`limimeshi-prod`プロジェクトにアクセスし、FirestoreとAuthenticationが有効化されていることを確認できる
 
 **Acceptance Scenarios**:
 
@@ -25,11 +27,13 @@
 
 ### User Story 2 - Terraformで環境構築を再現可能にする (Priority: P2)
 
-インフラ管理者として、Terraformコードで環境構築を管理したい。これにより環境構築の再現性が確保され、変更履歴がGitで追跡できる。
+インフラ管理者として、Terraformコードで環境構築を管理したい
 
-**Why this priority**: 再現性と変更管理はベストプラクティスだが、1回限りの構築なら手動でも可能。
+これにより環境構築の再現性が確保され、変更履歴がGitで追跡できる
 
-**Independent Test**: 新規GCPプロジェクトに対して`terraform apply`を実行し、同等の環境が構築されることを確認できる。
+**Why this priority**：再現性と変更管理はベストプラクティスだが、1回限りの構築なら手動でも可能
+
+**Independent Test**：新規GCPプロジェクトに対して`terraform apply`を実行し、同等の環境が構築されることを確認できる
 
 **Acceptance Scenarios**:
 
@@ -40,11 +44,13 @@
 
 ### User Story 3 - 管理者ユーザーを本番環境で利用可能にする (Priority: P3)
 
-管理者として、本番環境でAdmin権限を持つユーザーでログインしたい。これにより管理画面で本番データを操作できる。
+管理者として、本番環境でAdmin権限を持つユーザーでログインしたい
 
-**Why this priority**: 管理画面の本番運用に必要だが、環境構築後に実施可能。
+これにより管理画面で本番データを操作できる
 
-**Independent Test**: 本番環境のAuthenticationで作成したユーザーで管理画面にログインし、Admin機能が使えることを確認。
+**Why this priority**：管理画面の本番運用に必要だが、環境構築後に実施可能
+
+**Independent Test**：本番環境のAuthenticationで作成したユーザーで管理画面にログインし、Admin機能が使えることを確認
 
 **Acceptance Scenarios**:
 

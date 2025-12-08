@@ -88,7 +88,7 @@
 - [x] T027 `spec.md`作成（仕様書）
 - [x] T028 `plan.md`作成（実装計画）
 - [x] T029 `tasks.md`作成（このファイル）
-- [ ] T030 `checklist.md`作成（完了チェックリスト）
+- [x] T030 `checklist.md`作成（完了チェックリスト）
 - [ ] T031 Spec Kit追加をコミット
 
 **Checkpoint**: Spec Kitドキュメントが完備
