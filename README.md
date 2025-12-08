@@ -21,6 +21,25 @@ parent-directory/
 | `develop` | 開発環境（通常はここから作業） |
 | `feature/*` | 機能開発 |
 
+## Firebase環境
+
+| 環境 | プロジェクトID | 用途 |
+|------|---------------|------|
+| dev | `limimeshi-dev` | 開発・テスト |
+| prod | `limimeshi-prod` | 本番 |
+
+### 使用中のFirebase機能
+
+| 機能 | dev | prod | 備考 |
+|------|-----|------|------|
+| Authentication | ✅ | ✅ | メール/パスワード認証 |
+| Firestore | ✅ | ✅ | asia-northeast1（東京） |
+| Hosting | ✅ | - | 管理画面（limimeshi-admin） |
+
+### プラン
+
+両環境とも **Sparkプラン（無料）** で運用中。Cloud Functions等が必要になった場合はBlazeプランへ切り替え。
+
 ## ディレクトリ構成
 
 ### Firebase設定（デプロイ対象）
