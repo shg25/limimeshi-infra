@@ -24,12 +24,17 @@ if (!uid) {
   process.exit(1);
 }
 
+// Firebase CLI の現在のプロジェクトを取得（firebase use で設定したもの）
+const projectId = process.env.GCLOUD_PROJECT || process.env.FIREBASE_PROJECT || 'limimeshi-dev';
+
 // Firebase Admin SDK 初期化（ADC: Application Default Credentials を使用）
 if (getApps().length === 0) {
   initializeApp({
-    projectId: 'limimeshi-dev',
+    projectId,
   });
 }
+
+console.log(`🔧 Using project: ${projectId}`);
 
 const auth = getAuth();
 

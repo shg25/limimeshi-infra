@@ -13,13 +13,34 @@ parent-directory/
 
 ## ブランチ戦略
 
-このリポジトリは**git-flow**を採用。詳細は [CONTRIBUTING.md](https://github.com/shg25/limimeshi-docs/blob/main/CONTRIBUTING.md) を参照。
+- このリポジトリは**git-flow**を採用
+- 詳細は [CONTRIBUTING.md](https://github.com/shg25/limimeshi-docs/blob/main/CONTRIBUTING.md) を参照
 
 | ブランチ | 用途 |
 |---------|------|
 | `main` | 本番環境 |
 | `develop` | 開発環境（通常はここから作業） |
 | `feature/*` | 機能開発 |
+
+## Firebase環境
+
+| 環境 | プロジェクトID | 用途 |
+|------|---------------|------|
+| dev | `limimeshi-dev` | 開発・テスト |
+| prod | `limimeshi-prod` | 本番 |
+
+### 使用中のFirebase機能
+
+| 機能 | dev | prod | 備考 |
+|------|-----|------|------|
+| Authentication | ✅ | ✅ | メール/パスワード認証 |
+| Firestore | ✅ | ✅ | asia-northeast1（東京） |
+| Hosting | ✅ | - | 管理画面（limimeshi-admin） |
+
+### プラン
+
+- 両環境とも **Sparkプラン（無料）** で運用中
+- Cloud Functions等が必要になった場合はBlazeプランへ切り替え
 
 ## ディレクトリ構成
 
