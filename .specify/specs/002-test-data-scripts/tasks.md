@@ -1,7 +1,7 @@
 # Tasks: テストデータ管理スクリプト
 
-**Input**: Design documents from `/specs/002-test-data-scripts/`
-**Prerequisites**: plan.md (required), spec.md (required)
+**Input**: Design documents from `/specs/002-test-data-scripts/`  
+**Prerequisites**: plan.md (required), spec.md (required)  
 
 ## Format: `[ID] [Status] Description`
 

@@ -1,8 +1,8 @@
 # Completion Checklist: テストデータ管理スクリプト
 
-**Purpose**: スクリプト実装の完了確認
-**Created**: 2025-12-06
-**Feature**: [spec.md](./spec.md)
+**Purpose**: スクリプト実装の完了確認  
+**Created**: 2025-12-06  
+**Feature**: [spec.md](./spec.md)  
 
 ## スクリプトファイル
 
