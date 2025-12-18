@@ -14,6 +14,7 @@ Firestore Rules、Indexes、データモデル設計の管理
 
 ### 完了
 
+- [x] Cloud Functions: お気に入りカウント同期（003-cloud-functions-favorites）
 - [x] リポジトリ作成
 - [x] 初期セットアップ（/setup-new-repo）
 - [x] Firestore Rules/Indexes移行（limimeshi-adminから）
@@ -36,10 +37,12 @@ Firestore Rules、Indexes、データモデル設計の管理
 
 ## 更新履歴
 
+- 2025/12/18：Cloud Functions完了（お気に入りカウント同期）
+- 2025/12/16：Cloud Functions追加（お気に入りカウント同期）
 - 2025/12/06：リポジトリ作成、初期セットアップ
 - 2025/12/06：インフラ分離完了（Firestore設定、data-model、guides、scripts移行）
 - 2025/12/08：本番環境構築（limimeshi-prod）
 
 ---
 
-**最終更新**: 2025/12/08
+**最終更新**: 2025/12/18
