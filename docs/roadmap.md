@@ -34,6 +34,9 @@ Firestore Rules、Indexes、データモデル設計の管理
 
 - [ ] 本番Hosting設定（limimeshi-adminリポジトリで実施）
 - [ ] テストデータ更新
+  - [ ] seed-test-data.jsの更新（favoriteCount初期値の反映、003-favorites対応）
+  - [ ] 開発環境のデータクリーンアップ（clear → seed で最新データに入れ替え）
+  - [ ] ユーザーデータ（users/{userId}/favorites）のクリーンアップスクリプト追加
 
 ## 更新履歴
 
